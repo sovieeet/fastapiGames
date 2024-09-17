@@ -5,7 +5,6 @@ from starlette.responses import RedirectResponse
 from typing import List, Dict
 from datetime import datetime
 
-# Lista negra de tokens
 blacklisted_tokens: List[Dict[str, datetime]] = []
 
 class AuthMiddleware(BaseHTTPMiddleware):
